@@ -9,6 +9,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Publish Helm charts
-        uses: min-charles/helm-charts@master
+        uses: min-charles/helm-charts@main
         with:
           token: ${{ secrets.GITHUB_TOKEN }}

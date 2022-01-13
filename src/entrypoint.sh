@@ -66,9 +66,9 @@ main() {
       CHARTS_URL="https://${OWNER}.github.io/${REPOSITORY}"
   fi
 
-  # if [[ "$TARGET_DIR" != "." && "$TARGET_DIR" != "docs" ]]; then
-  #   CHARTS_URL="${CHARTS_URL}/${TARGET_DIR}"
-  # fi
+  if [[ "$TARGET_DIR" != "." && "$TARGET_DIR" != "docs" ]]; then
+    CHARTS_URL="${CHARTS_URL}/${INDEX_DIR}"
+  fi
 
   if [[ -z "$REPO_URL" ]]; then
       REPO_URL="https://x-access-token:${GITHUB_TOKEN}@github.com/${OWNER}/${REPOSITORY}"
@@ -158,13 +158,13 @@ upload() {
 
   if [[ -f "${INDEX_DIR}/index.yaml" ]]; then
     echo "Found index, merging changes"
-    helm repo index ${CHARTS_TMP_DIR} --url "https://min-charles.github.io/helm-charts/stable" --merge "${INDEX_DIR}/index.yaml"
+    helm repo index ${CHARTS_TMP_DIR} --url ${CHARTS_DIR} --merge "${INDEX_DIR}/index.yaml"
     mv -f ${CHARTS_TMP_DIR}/*.tgz ${TARGET_DIR}
     mv -f ${CHARTS_TMP_DIR}/index.yaml ${INDEX_DIR}/index.yaml
   else
     echo "No index found, generating a new one"
     mv -f ${CHARTS_TMP_DIR}/*.tgz ${TARGET_DIR}
-    helm repo index ${INDEX_DIR} --url "https://min-charles.github.io/helm-charts/stable"
+    helm repo index ${INDEX_DIR} --url ${CHARTS_DIR}
   fi
 
   git add ${TARGET_DIR}

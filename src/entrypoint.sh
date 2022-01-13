@@ -158,7 +158,7 @@ upload() {
 
   if [[ -f "${INDEX_DIR}/index.yaml" ]]; then
     echo "Found index, merging changes"
-    helm repo index ${CHARTS_TMP_DIR} --url ${CHARTS_URL} --merge "${INDEX_DIR}/index.yaml"
+    helm repo index ${CHARTS_TMP_DIR} --url "${CHARTS_URL}/${TARGET_DIR}" --merge "${INDEX_DIR}/index.yaml"
     mv -f ${CHARTS_TMP_DIR}/*.tgz ${TARGET_DIR}
     mv -f ${CHARTS_TMP_DIR}/index.yaml ${INDEX_DIR}/index.yaml
   else

@@ -14,9 +14,9 @@ entries:
   helm-guestbook-mc:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2022-01-13T07:07:48.609864051Z"
+    created: "2022-01-13T07:16:48.451808295Z"
     description: A Helm chart for Kubernetes
-    digest: 569eb0aa3b1bfea4c66802d5d3aba4dba791f22abf46a5f1c17a732985be7287
+    digest: a733c61108458a4b5c1609ff3510f6cf0cb8083aba4bafeeecade801d205e3e3
     name: helm-guestbook-mc
     type: application
     urls:
@@ -33,4 +33,4 @@ entries:
     urls:
     - https://min-charles.github.io/helm-charts/helm-guestbook-test-0.1.0.tgz
     version: 0.1.0
-generated: "2022-01-13T07:07:48.60877101Z"
+generated: "2022-01-13T07:16:48.451145848Z"

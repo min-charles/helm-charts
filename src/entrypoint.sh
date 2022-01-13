@@ -68,7 +68,7 @@ main() {
 
   # if [[ "$TARGET_DIR" != "." && "$TARGET_DIR" != "docs" ]]; then
   #   CHARTS_URL="${CHARTS_URL}/${TARGET_DIR}"
-  fi
+  # fi
 
   if [[ -z "$REPO_URL" ]]; then
       REPO_URL="https://x-access-token:${GITHUB_TOKEN}@github.com/${OWNER}/${REPOSITORY}"
@@ -84,7 +84,7 @@ main() {
 
   # if [[ -z "$INDEX_DIR" ]]; then
   #     INDEX_DIR=${TARGET_DIR}
-  fi
+  # fi
 
   locate
   download

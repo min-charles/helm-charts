@@ -1,0 +1,25 @@
+apiVersion: v1
+entries:
+  helm-guestbook:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2022-01-13T06:23:56.739235995Z"
+    description: A Helm chart for Kubernetes
+    digest: 6e1063bb983a1e89c70248476c8ee961e41630ffebd95bf61784476492d54dbf
+    name: helm-guestbook
+    type: application
+    urls:
+    - https://min-charles.github.io/helm-charts/stable/helm-guestbook-0.1.0.tgz
+    version: 0.1.0
+  helm-guestbook-test:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2022-01-13T06:23:56.738797586Z"
+    description: A Helm chart for Kubernetes
+    digest: 8c76fa04381fa90761f2eb2d6d1fe1bd2fcec626a91af757c108ce4c8a486a3d
+    name: helm-guestbook-test
+    type: application
+    urls:
+    - https://min-charles.github.io/helm-charts/helm-guestbook-test-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-01-13T06:23:56.738205973Z"

@@ -66,8 +66,8 @@ main() {
       CHARTS_URL="https://${OWNER}.github.io/${REPOSITORY}"
   fi
 
-  if [[ "$TARGET_DIR" != "." && "$TARGET_DIR" != "docs" ]]; then
-    CHARTS_URL="${CHARTS_URL}/${TARGET_DIR}"
+  # if [[ "$TARGET_DIR" != "." && "$TARGET_DIR" != "docs" ]]; then
+  #   CHARTS_URL="${CHARTS_URL}/${TARGET_DIR}"
   fi
 
   if [[ -z "$REPO_URL" ]]; then
@@ -82,8 +82,8 @@ main() {
       COMMIT_EMAIL="${GITHUB_ACTOR}@users.noreply.github.com"
   fi
 
-  if [[ -z "$INDEX_DIR" ]]; then
-      INDEX_DIR=${TARGET_DIR}
+  # if [[ -z "$INDEX_DIR" ]]; then
+  #     INDEX_DIR=${TARGET_DIR}
   fi
 
   locate

@@ -16,4 +16,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           charts_dir: stable
           target_dir: stable/package
-          index_dir: stable
+          

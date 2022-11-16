@@ -22,4 +22,15 @@ entries:
     urls:
     - https://min-charles.github.io/helm-charts/stable/helm-guestbook-test-0.1.0.tgz
     version: 0.1.0
-generated: "2022-01-17T02:33:44.998209976Z"
+  helm-guestbook-test1:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2022-11-16T02:25:56.32875516Z"
+    description: A Helm chart for Kubernetes
+    digest: d347ed5036e9acd8299461f6fc3ea487ed30fa0c458835bfcb1df33c709ac3f8
+    name: helm-guestbook-test1
+    type: application
+    urls:
+    - https://min-charles.github.io/helm-charts/stable/helm-guestbook-test1-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-11-16T02:25:56.328216755Z"
